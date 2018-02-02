@@ -1,6 +1,6 @@
 {
   "name": "solc",
-  "version": "0.4.19",
+  "version": "0.4.20",
   "description": "Solidity compiler",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "lint": "semistandard",
-    "prepublish": "./downloadCurrentVersion.js && ./verifyVersion.js",
+    "prepublish": "./downloadCurrentVersion.js",
     "pretest": "npm run lint",
     "test": "tape ./test/index.js"
   },
